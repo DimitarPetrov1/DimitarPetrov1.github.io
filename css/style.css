@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro h1,
+.top-nav,
+.my-work h2,
+.portfolio-content,
+.enquire-chat h3,
+footer,
+.section-about h2,
+.section-about h3,
+#myCV,
+._item {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.my-work p,
+.enquire-msg,
+.section-about h4,
+.qual-item h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+.myname {
+  font-size: 1.25rem;
+}
+
+.top-nav {
+  padding: 1rem 0;
+}
+
+.top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav ul .li-single {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.top-nav ul .li-group {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.top-nav ul li a {
+  color: #fff;
+}
+
+.top-nav ul li p {
+  font-style: italic;
+  color: #bebebe;
+  text-shadow: 0px 2px 4px #000;
+  pointer-events: none;
+}
+
+.intro {
+  background-image: url("../img/intropic.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro-about {
+  height: auto;
+  background-image: none;
+}
+
+.intro-about .top-nav {
+  background-color: #323199;
+}
+
+#myCV {
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 1.6rem;
+  margin: 1rem 0;
+  background-color: #323199;
+  border-radius: 6px;
+}
+
+.section-about h3,
+.section-about h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-about h3 {
+  font-size: 2rem;
+}
+
+.section-about h4 {
+  font-size: 1.5rem;
+}
+
+.qual-group {
+  background-color: #f5f5f5;
+  padding-bottom: 0;
+}
+
+.qual-item h3 {
+  font-size: 3rem;
+  color: #323199;
+}
+
+._item {
+  margin-bottom: 2rem;
+}
+
+._item h4 {
+  float: left;
+  width: 20%;
+  color: #323199;
+}
+
+._item ul {
+  float: right;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+._item ul li {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 33%;
+}
+
+.enquire-about {
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0px 2px 10px #000;
+  width: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 1rem;
+  width: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pulse {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section {
+  padding: 4rem 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.section h2,
+.section p {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 4rem;
+}
+
+.portfolio-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-item {
+  position: relative;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  height: 45vh;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.color-overlay {
+  background-color: rgba(50, 49, 153, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.portfolio-item:hover .portfolio-bg-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.portfolio-bg-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.portfolio-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: #fff;
+  z-index: 3;
+}
+
+.portfolio-content img {
+  max-width: 160px;
+  max-height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.enqire {
+  padding: 4rem 0 0 0;
+}
+
+.enquire-chat {
+  background-color: #323199;
+  color: #fff;
+  padding: 5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0px 2px 4px #2e2e2e;
+}
+
+.enquire-chat h3 {
+  font-size: 2rem;
+}
+
+.enquire-chat a {
+  font-size: 5rem;
+  color: #fff;
+}
+
+footer {
+  padding: 2rem 1rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+.social-footer ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+.social-footer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.social-footer svg {
+  fill: #fff;
+}
+
+.social-footer svg:hover {
+  stroke: #323199;
+  fill: #323199;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+
+.copy {
+  color: #d1d1d1;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+@media only screen and (min-width: 3840px) {
+  html {
+    font-size: 2rem;
+  }
+  .portfolio-content img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .social-footer svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-item {
+    -ms-flex-preferred-size: 49.5%;
+        flex-basis: 49.5%;
+    height: 40vh;
+  }
+  .color-overlay {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .enquire-chat {
+    padding: 2.5rem 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .enquire-chat h3 {
+    font-size: 1rem;
+  }
+  .enquire-chat a {
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header h1 {
+    font-size: 2.4rem;
+    width: 90%;
+  }
+  .section-about h3,
+  .section-about h4 {
+    width: 80%;
+  }
+  .section {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .section h2,
+  .section p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .section h2 {
+    font-size: 3rem;
+  }
+  ._item h4 {
+    float: none;
+    margin-bottom: 2rem;
+  }
+  ._item ul {
+    float: none;
+    width: 100%;
+  }
+  ._item ul li {
+    width: 31%;
+  }
+  .enqire {
+    padding: 3rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 50vh;
+  }
+  .color-overlay {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .top-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-nav ul li {
+    margin: 0.5rem 0;
+  }
+  .top-nav ul li p {
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .portfolio-item {
+    height: 30vh;
+  }
+  .color-overlay {
+    height: 30vh;
+  }
+  ._item ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
