@@ -21,23 +21,26 @@
         <nav class="top-nav">
             <ul>
                 <li class="li-single"><a href="index.html" class="myname">Dimitar Petrov</a>
-                    <p> Portfolio</p>
+                    <br>
+                    <small>
+                        <p>Portfolio</p>
+                    </small>
                 </li>
                 <li class="li-group"><a href="about.html">About me</a></li>
-                <li class="li-group"><a href="#contactMe">Contact</a></li>
+                <li class="li-group">
+                    <p class="contact-btn" onclick="goToContact()">Contact</p>
+                </li>
             </ul>
         </nav>
 
         <h1>My name is Dimitar Petrov and I am a Front-End Developer.</h1>
 
-        <a href="#myWork">
-            <img src="img/svg/chevron-down.svg" class="down-arrow pulse" alt="Arrow">
-        </a>
+        <img onclick="goToWork()" src="img/svg/chevron-down.svg" class="down-arrow pulse" alt="Arrow">
 
     </header>
 
     <!-- My work section -->
-    <section id="myWork" class="section my-work">
+    <section class="section my-work">
 
         <h2>My Projects</h2>
         <p>I'm based in <strong>Bulgaria</strong>, and I'm fluent in both writen and spoken English. I like to implement
@@ -131,7 +134,7 @@
 
     </section>
 
-    <section class="section enqire" id="contactMe">
+    <section class="section enqire contact-me">
 
         <div class="enquire-chat">
             <h3>Lookng to team up or to hire me?</h3>
@@ -141,7 +144,7 @@
     </section>
 
     <footer>
-        <div class="social-footer">
+        <!-- <div class="social-footer">
             <ul>
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -152,10 +155,10 @@
                         </svg></a>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <p class="copy">
-            <i>Portfolio Theme</i>. Developed by Dimitar P
+            <i>2020 Portfolio Theme.</i> Developed by Dimitar P
         </p>
     </footer>
 
